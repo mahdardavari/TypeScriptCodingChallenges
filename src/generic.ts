@@ -1,6 +1,5 @@
 const arr: [string, number | boolean][] = [['keyOne', 1], ['keyTwo', 2], ['keyThree', true]]
-const arrX = [1, 2, 3]
-const arrY = ['a', 'b', 'c']
+
 
 function convertArrToObject<T>(array: [string, T][]) {
     const obj: {
@@ -15,6 +14,9 @@ function convertArrToObject<T>(array: [string, T][]) {
 }
 const obj = convertArrToObject(arr)
 
+const arrX = [1, 2, 3]
+const arrY = ['a', 'b', 'c']
+
 function getArr<ArrayType>(array: ArrayType[]) {
     return array[1]
 }
@@ -27,12 +29,8 @@ type APIResponse<TData extends object> = {
     isError: boolean,
 }
 
-
-
 type UserResponse = APIResponse<{ name: string, id: number, age: number, status?: number }>
 type BlogResponse = APIResponse<{ name: string, }>
-
-
 
 const userResponse: UserResponse = {
     data: { name: 'M', id: 20, age: 20 },
