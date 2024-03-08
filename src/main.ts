@@ -1,3 +1,5 @@
+// type
+
 type PersonInfo = {
     name: string;
     skillLevel: 'Beginner' | 'Intermediate' | 'Expert'
@@ -21,5 +23,5 @@ printSkillLevel('Expert')
 function sumWithCallback(a: number, b: number, cb: (sum: number) => void) {
     cb(a + b)
 }
-// sumWithCallback(2, 3, sum => { console.log(sum) })
+sumWithCallback(2, 3, sum => { console.log(sum) })
 

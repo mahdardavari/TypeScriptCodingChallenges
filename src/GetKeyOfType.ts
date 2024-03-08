@@ -1,3 +1,17 @@
+
+const objOne = {
+    name: '1',
+    age: 2,
+};
+
+//Get the variable type
+type ObjectOne = typeof objOne;
+
+// Get the key of type
+// "name" | "age"
+type K = keyof ObjectOne;
+
+// keyof Person
 type Person = {
     name: string
     age: number
@@ -16,4 +30,4 @@ const a = {
     isProgramer: true
 }
 
-type A  = (typeof a)[keyof typeof a]
+type A = (typeof a)[keyof typeof a]

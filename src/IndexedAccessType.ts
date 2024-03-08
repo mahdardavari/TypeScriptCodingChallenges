@@ -6,5 +6,4 @@ type Student = {
 }
 
 // string
-
 type StudentName = Student['name']
