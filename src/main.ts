@@ -1,27 +1,24 @@
-// type
+import { filter } from "./array-methods/filter";
+import { map } from "./array-methods/map";
+import { reduce } from "./array-methods/reduce";
 
-type PersonInfo = {
-    name: string;
-    skillLevel: 'Beginner' | 'Intermediate' | 'Expert'
-}
+const filtered = filter([1, 2, 3, 4, 5, 6], (item) => item < 3);
+// console.log(filtered)
 
-type personWithId = PersonInfo & { id: string };
+const students = [{ name: "Mahdar" }, { name: "Poori" }];
+const studentWithId = map(students, (student) => {
+    return {
+        ...student,
+        id: Math.floor(Math.random() * 100),
+    };
+});
+// console.log(studentWithId)
 
-function printPerson(person: { name: string }) {
-    console.log(person.name)
-}
-
-const person: PersonInfo = { name: 'Mahdar', skillLevel: 'Intermediate' }
-
-function printSkillLevel(skillLevel: PersonInfo["skillLevel"]) {
-    console.log(skillLevel, 'skillLevel')
-}
-printSkillLevel('Expert')
-
-
-
-function sumWithCallback(a: number, b: number, cb: (sum: number) => void) {
-    cb(a + b)
-}
-sumWithCallback(2, 3, sum => { console.log(sum) })
-
+console.log(
+    reduce(
+        [2, 3, 4, 5],
+        (sum, item) => {
+            return item + sum;
+        },
+        0
+    ))

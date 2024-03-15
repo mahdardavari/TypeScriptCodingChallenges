@@ -1,4 +1,4 @@
-const arr: [string, number | boolean][] = [['keyOne', 1], ['keyTwo', 2], ['keyThree', true]]
+export const arr: [string, number | boolean][] = [['keyOne', 1], ['keyTwo', 2], ['keyThree', true]]
 
 
 function convertArrToObject<T>(array: [string, T][]) {
