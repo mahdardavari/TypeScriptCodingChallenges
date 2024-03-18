@@ -17,8 +17,6 @@ function printSkillLevel(skillLevel: PersonInfo["skillLevel"]) {
 }
 printSkillLevel('Expert')
 
-
-
 function sumWithCallback(a: number, b: number, cb: (sum: number) => void) {
     cb(a + b)
 }

@@ -1,4 +1,4 @@
-// the original Array.reduce function takes two arguement :
+// the original Array.reduce function takes two argument :
 //1. A callback function as an argument and that callback function can have four arguments passed into it :
 // a. accumulator
 // b. current value
