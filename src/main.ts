@@ -2,25 +2,20 @@ import { filter } from "./array-methods/filter";
 import { map } from "./array-methods/map";
 import { reduce } from "./array-methods/reduce";
 
-const filtered = filter([1, 2, 3, 4, 5, 6], (item) => item < 3);
-// console.log(filtered)
+const numbers = [1, 2, 3, 4, 5, 6];
+const students = [{ name: "Mahdar" }, { name: "POPOPOO" }];
 
-const students = [{ name: "Mahdar" }, { name: "Poori" }];
+const filtered = filter(numbers, (item) => item < 3);
+//
 const studentWithId = map(students, (student) => {
     return {
         ...student,
         id: Math.floor(Math.random() * 100),
     };
 });
-// console.log(studentWithId)
 
-console.log(
-    reduce(
-        [2, 3, 4, 5],
-        (sum, item) => {
-            return item + sum;
-        },
-        0
-    ))
+//
 
-
+const sum = reduce(numbers, (sum, item) => {
+    return item + sum;
+}, 0);

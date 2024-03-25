@@ -1,5 +1,5 @@
-export const arr: [string, number | boolean][] = [['keyOne', 1], ['keyTwo', 2], ['keyThree', true]]
-
+export const arr: [string, number | boolean][] =
+    [['keyOne', 1], ['keyTwo', 2], ['keyThree', true]]
 
 function convertArrToObject<T>(array: [string, T][]) {
     const obj: {
@@ -14,16 +14,16 @@ function convertArrToObject<T>(array: [string, T][]) {
 }
 const obj = convertArrToObject(arr)
 
+//
 const arrX = [1, 2, 3]
 const arrY = ['a', 'b', 'c']
-
 function getArr<ArrayType>(array: ArrayType[]) {
     return array[1]
 }
 const retX = getArr(arrX)
 const retY = getArr(arrY)
 
-
+//
 type APIResponse<TData extends object> = {
     data: TData,
     isError: boolean,

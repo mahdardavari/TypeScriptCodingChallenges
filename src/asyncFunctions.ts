@@ -1,4 +1,4 @@
-// use generic type
+// using generic type
 
 function wait(duration: number): Promise<string> {
     return new Promise<string>(resolve => {

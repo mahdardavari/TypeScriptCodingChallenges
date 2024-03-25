@@ -24,6 +24,7 @@ function getValue(key: keyof Person, person: Person) {
     return person[key]
 }
 
+// keyof 
 const a = {
     name: 'Mahdar',
     age: 27,

@@ -12,6 +12,7 @@ function printPerson(person: { name: string }) {
 
 const person: PersonInfo = { name: 'Mahdar', skillLevel: 'Intermediate' }
 
+// access index!
 function printSkillLevel(skillLevel: PersonInfo["skillLevel"]) {
     console.log(skillLevel, 'skillLevel')
 }
