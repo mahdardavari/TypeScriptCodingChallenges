@@ -17,5 +17,5 @@ type Val = Awaited<string>;
 async function doSomething () {
     return 2
 }
-
+// The typeof type guard is used to determine the type of a variable
 type Value = Awaited<ReturnType<typeof doSomething>>

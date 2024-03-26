@@ -1,3 +1,4 @@
+import { students } from "../main";
 // the original Array.map function takes a callback function as an argument and
 // that callback function can have three arguments passed into it :
 
@@ -25,3 +26,12 @@ export const map = <
   }
   return result;
 };
+
+const studentWithId = map(students, (student) => {
+  return {
+    ...student,
+    id: Math.floor(Math.random() * 100),
+  };
+});
+
+console.log(studentWithId)

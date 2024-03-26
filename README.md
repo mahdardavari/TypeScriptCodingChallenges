@@ -1,10 +1,13 @@
 TypeScript Coding Challenges:
 
 -array-methods
+Implement array methods
+
+-utility functions
 
 ---
 
-TypeScript Tips and Tricks:
+Tips and Tricks:
 
 Follow Consistent Naming Conventions
 Adhere to consistent naming conventions for variables, functions, and classes to improve code readability.

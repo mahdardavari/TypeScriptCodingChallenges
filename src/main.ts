@@ -1,21 +1,20 @@
-import { filter } from "./array-methods/filter";
-import { map } from "./array-methods/map";
-import { reduce } from "./array-methods/reduce";
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const students = [{ name: "Mahdar" }, { name: "POPOPOO" }];
+export const numbers = [1, 2, 3, 4, 5, 6];
+export const students = [{ name: "Mahdar" }, { name: "POPOPOO" }];
+export const people = [
+    { name: 'Adam', age: 21 },
+    { name: 'Brian', age: 10 },
+    { name: 'Carla', age: 19 },
+    { name: 'Daniel', age: 14 },
+    { name: 'Ellie', age: 21 },
+];
 
-const filtered = filter(numbers, (item) => item < 3);
-//
-const studentWithId = map(students, (student) => {
-    return {
-        ...student,
-        id: Math.floor(Math.random() * 100),
-    };
-});
 
-//
-
-const sum = reduce(numbers, (sum, item) => {
-    return item + sum;
-}, 0);
+// Declaring Globals
+// Don't put your types in .d.ts files !
+declare global {
+    type Whatever = {};
+    interface Window {
+        foo: () => string
+    }
+}

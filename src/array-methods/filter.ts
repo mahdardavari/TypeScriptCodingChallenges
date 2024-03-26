@@ -1,3 +1,5 @@
+import { numbers } from "../main";
+
 // The filter() method creates a new array with all elements
 // that pass the test implemented by the provided function.
 // This method does not change the original array.
@@ -5,7 +7,7 @@
 // 1.callback − Function to test each element of the array
 //2. thisObject − Object to use as this when executing callback.
 
-export const result = [1, 2, 3, 4].filter((item, index, array) => {
+export const result = numbers.filter((item, index, array) => {
   return item > 1;
 });
 
@@ -38,3 +40,7 @@ export const filter = <
   }
   return result as TList;
 };
+
+
+const filtered = filter(numbers, (item) => item < 3);
+console.log(filtered)

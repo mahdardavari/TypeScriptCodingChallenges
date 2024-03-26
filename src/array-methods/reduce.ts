@@ -1,3 +1,4 @@
+import { numbers } from "../main";
 // the original Array.reduce function takes two argument :
 //1. A callback function as an argument and that callback function can have four arguments passed into it :
 // a. accumulator
@@ -27,3 +28,9 @@ export const reduce = <TArray extends UnknownList, TInitialValue>(
 
     return accumulated;
 }
+
+const sum = reduce(numbers, (sum, item) => {
+    return item + sum;
+}, 0);
+
+console.log(sum)

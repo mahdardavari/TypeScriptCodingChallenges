@@ -4,7 +4,9 @@ const objOne = {
     age: 2,
 };
 
-//Get the variable type
+// Get the variable type
+// The typeof type guard is used to determine the type of a variable
+// It checks whether a variable is of a certain primitive type
 type ObjectOne = typeof objOne;
 
 // Get the key of type
