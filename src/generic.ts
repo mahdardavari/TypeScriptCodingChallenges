@@ -14,7 +14,7 @@ function convertArrToObject<T>(array: [string, T][]) {
 }
 const obj = convertArrToObject(arr)
 
-//
+///////
 const arrX = [1, 2, 3]
 const arrY = ['a', 'b', 'c']
 function getArr<ArrayType>(array: ArrayType[]) {
@@ -23,7 +23,7 @@ function getArr<ArrayType>(array: ArrayType[]) {
 const retX = getArr(arrX)
 const retY = getArr(arrY)
 
-//
+///////
 type APIResponse<TData extends object> = {
     data: TData,
     isError: boolean,
