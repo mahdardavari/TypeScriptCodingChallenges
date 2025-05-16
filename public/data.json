@@ -1,0 +1,67 @@
+{
+  "company": {
+    "name": "TechSolutions Inc.",
+    "founded": 2015,
+    "headquarters": "San Francisco",
+    "active": true
+  },
+  "employees": [
+    {
+      "id": 101,
+      "name": "John Smith",
+      "position": "Software Developer",
+      "department": "Engineering",
+      "salary": 85000,
+      "skills": ["JavaScript", "React", "Node.js"]
+    },
+    {
+      "id": 102,
+      "name": "Lisa Brown",
+      "position": "Product Manager",
+      "department": "Management",
+      "salary": 95000,
+      "skills": ["Agile", "Scrum", "Product Roadmaps"]
+    },
+    {
+      "id": 103,
+      "name": "David Wilson",
+      "position": "UX Designer",
+      "department": "Design",
+      "salary": 75000,
+      "skills": ["Figma", "User Research", "Prototyping"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "P-100",
+      "name": "Website Redesign",
+      "status": "In Progress",
+      "dueDate": "2023-12-15",
+      "assignedTo": [101, 103]
+    },
+    {
+      "id": "P-101",
+      "name": "Mobile App Development",
+      "status": "Planning",
+      "dueDate": "2024-03-01",
+      "assignedTo": [101, 102]
+    }
+  ],
+  "departments": {
+    "Engineering": {
+      "head": "John Smith",
+      "budget": 500000,
+      "teamSize": 15
+    },
+    "Design": {
+      "head": "David Wilson",
+      "budget": 250000,
+      "teamSize": 8
+    },
+    "Management": {
+      "head": "Lisa Brown",
+      "budget": 300000,
+      "teamSize": 5
+    }
+  }
+}

@@ -10,3 +10,13 @@ const isString = (input: unknown): input is string => {
 const mixedArray = [1, 'Mahdar', []]
 
 const stringOnly = mixedArray.filter(isString)
+
+
+// TypeScript 5.5 
+const isNumber = (val: unknown): val is number =>
+    typeof val === 'number';
+function logNumber(val: unknown) {
+    if (isNumber(val)) {
+        val.toFixed(2) // no error ,inferred as number
+    }
+}
